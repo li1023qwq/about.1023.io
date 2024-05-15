@@ -1,0 +1,143 @@
+/* style.css */
+
+/* 重置一些默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 头部样式 */
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    text-align: center;
+    z-index: 1;
+}
+
+.header-text h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.header-text p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.toggle {
+    display: none;
+}
+
+/* 响应式导航栏 */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* 关于我们、服务、作品、团队、联系我们等部分的通用样式 */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* 其他特定部分的样式，如作品、团队等，可以根据需要添加 */
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
