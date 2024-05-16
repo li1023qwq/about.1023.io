@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 晚夜深秋工作室</title>
+    <meta name="description" content="晚夜深秋工作室是一家专注于网站建设、网络营销、SEO优化等服务的工作室。">
+    <meta name="keywords" content="晚夜深秋工作室,网站建设,网络营销,SEO优化">
+    <meta name="author" content="晚夜深秋工作室">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/1023-logo.png">
+    <link rel="apple-touch-icon" href="images/1023-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* 省略部分样式 */
+
+        /* 调整关于我们部分样式 */
+        .about {
+            padding: 100px 0;
+            text-align: center;
+            background-color: #f9f9f9; /* 调整背景颜色 */
+        }
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333; /* 调整标题颜色 */
+        }
+        .about-text p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- 删除不必要的导航链接 -->
+            <nav>
+                <div class="menu">
+                    <ul class="glass-header">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <!-- 删除其他导航链接 -->
+                    </ul>
+                </div>
+                <div class="toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>关于我们</h2>
+                <p>晚夜深秋工作室是一家专注于网站建设、网络营销、SEO优化等服务的工作室。我们致力于为客户提供专业的定制化服务，帮助他们在互联网上建立良好的品牌形象，提升曝光度和知名度。</p>
+                <a href="#services" class="btn">了解更多</a>
+            </div>
+        </div>
+    </section>
+    <!-- 删除不必要的部分 -->
+    <footer>
+        <div class="container">
+            <p>晚夜深秋工作室 &copy; 2024</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.menu').toggleClass('active');
+            })
+        });
+    </script>
+</body>
+</html>
